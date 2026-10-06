@@ -1,4 +1,8 @@
-# OpenNotch
+<p align="center">
+  <img src="docs/icon.png" width="160" alt="OpenNotch icon">
+</p>
+
+<h1 align="center">OpenNotch</h1>
 
 A small macOS utility that turns the MacBook notch into a drop zone, a clipboard history, and a
 terminal-style activity heatmap. Written from scratch in Swift (SwiftUI + AppKit), no dependencies.

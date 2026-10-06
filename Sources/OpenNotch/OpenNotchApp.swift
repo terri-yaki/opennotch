@@ -41,10 +41,17 @@ final class AppDelegate: NSObject, NSApplicationDelegate, NSMenuDelegate {
     private func setUpStatusItem() {
         let item = NSStatusBar.system.statusItem(withLength: NSStatusItem.squareLength)
         if let button = item.button {
-            let image = NSImage(systemSymbolName: "tray.and.arrow.down.fill",
-                                accessibilityDescription: "OpenNotch")
-            image?.isTemplate = true
-            button.image = image
+            if let url = Bundle.main.url(forResource: "AppIcon", withExtension: "icns"),
+               let image = NSImage(contentsOf: url) {
+                image.isTemplate = false
+                image.size = NSSize(width: 18, height: 18)
+                button.image = image
+            } else {
+                let image = NSImage(systemSymbolName: "tray.and.arrow.down.fill",
+                                    accessibilityDescription: "OpenNotch")
+                image?.isTemplate = true
+                button.image = image
+            }
         }
 
         let menu = NSMenu()

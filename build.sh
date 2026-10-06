@@ -14,6 +14,7 @@ rm -rf "$APP"
 mkdir -p "$APP/Contents/MacOS" "$APP/Contents/Resources"
 cp "$BIN" "$APP/Contents/MacOS/OpenNotch"
 cp Resources/Info.plist "$APP/Contents/Info.plist"
+cp Resources/AppIcon.icns "$APP/Contents/Resources/AppIcon.icns"
 
 # Ad-hoc sign so macOS will run it locally and "Launch at Login" can register.
 codesign --force --sign - "$APP" >/dev/null 2>&1 || echo "warning: codesign failed (app may still run)"
