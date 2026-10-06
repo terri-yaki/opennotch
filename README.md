@@ -21,6 +21,44 @@ This build is ad-hoc signed. A copy downloaded from GitHub is quarantined, and G
 xattr -dr com.apple.quarantine OpenNotch.app
 ```
 
+## Demo
+
+![Notch on the desktop with one shelved file and the liquid pet](docs/screenshots/desktop.png)
+
+On the desktop: a shelved file and the liquid pet.
+
+![Collapsed notch with album art and the liquid pet](docs/screenshots/collapsed.jpg)
+
+Collapsed: album art and the pet.
+
+![Notch widening to show the battery](docs/screenshots/battery.jpg)
+
+Battery.
+
+![Shelf with parked files](docs/screenshots/shelf.jpg)
+
+Shelf.
+
+![Clipboard history](docs/screenshots/clipboard.jpg)
+
+Clipboard.
+
+![Activity heatmap and theme picker](docs/screenshots/activity.jpg)
+
+Activity.
+
+![AI token usage heatmap](docs/screenshots/ai-usage.jpg)
+
+AI usage.
+
+![Live CPU cores and memory](docs/screenshots/system.jpg)
+
+CPU and memory.
+
+![Now Playing with synced lyrics](docs/screenshots/music.jpg)
+
+Now Playing.
+
 ## Features
 
 - **Shelf**: drag files toward the notch and the shelf expands. Drop to park them, drag them back
