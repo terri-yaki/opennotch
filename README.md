@@ -90,6 +90,10 @@ Sources/OpenNotch/
 - Media controls and volume/brightness overlays in the notch
 - Tweak the wave in `HeatmapView.swift` (speed `1.7`, spatial frequency `0.30` / `0.22`, hue range `0.07`)
 
+## Contributing
+
+Issues, discussions, and pull requests are open. See [CONTRIBUTING.md](CONTRIBUTING.md).
+
 ## License
 
 MIT. This is an independent implementation inspired by the general idea of notch shelves;
