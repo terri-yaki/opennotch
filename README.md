@@ -5,6 +5,18 @@ terminal-style activity heatmap. Written from scratch in Swift (SwiftUI + AppKit
 
 On Macs without a notch it shows a small pill at the top-center of the screen instead.
 
+## Download
+
+Download [OpenNotch-0.1.0-macos.zip](https://github.com/terri-yaki/opennotch/releases/download/v0.1.0/OpenNotch-0.1.0-macos.zip) from the [v0.1.0 release](https://github.com/terri-yaki/opennotch/releases/tag/v0.1.0). Unzip it, then open OpenNotch.app.
+
+OpenNotch is a menu-bar app and has no Dock icon. It needs macOS 14 or later.
+
+This build is ad-hoc signed. A copy downloaded from GitHub is quarantined, and Gatekeeper blocks it, so double-click will not open it. After unzip, if macOS blocks it, open System Settings → Privacy & Security → Open Anyway, or right-click OpenNotch.app and choose Open. If that is not enough:
+
+```bash
+xattr -dr com.apple.quarantine OpenNotch.app
+```
+
 ## Features
 
 - **Shelf**: drag files toward the notch and the shelf expands. Drop to park them, drag them back
